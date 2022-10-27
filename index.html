@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Anant</title>
+    <link rel="stylesheet" href="social.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            min-height: 100vh;
+            box-sizing: border-box;
+            padding: 12px 8px;
+            background-color: rgb(251, 251, 255);
+        }
+
+        .blue {
+            color: rgb(14, 185, 185);
+        }
+
+        h2 {
+            margin: 0px 0 16px 12px;
+            font-family: sans-serif;
+        }
+
+        .inp {
+            width: -webkit-fill-available;
+            height: 35px;
+            border-radius: 10px;
+            border: 1px solid grey;
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        .remember {
+            margin: 6px 0;
+            display: flex;
+        }
+
+        .remember>input {
+            /* border: 2px solid ; */
+            margin-right: 15px;
+        }
+
+        .remember>label {
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 12px;
+        }
+
+        #signBtn {
+            color: black;
+            background-color: rgb(14, 185, 185);
+            height: 45px;
+        }
+
+        #signBtn:hover {
+            opacity: 0.8;
+        }
+
+        .forgot {
+            margin: 2px auto;
+            display: block;
+            width: max-content;
+            text-decoration: none;
+            color: grey;
+            font-size: smaller;
+
+        }
+
+        .forgot:hover {
+            text-decoration: underline;
+            color: rgb(14, 185, 185);
+        }
+
+        .Or {
+            display: flex;
+            width: -webkit-fill-available;
+            /* border: 1px solid green; */
+            align-items: center;
+            margin: 20px 0;
+        }
+        .manual{
+            margin-bottom: 20px;
+        }
+        .social{
+            margin-bottom: 60px;
+        }
+        .no-account{
+            margin: auto;
+            width: fit-content;
+        }
+        .no-account>span{
+            color: grey;
+            font-size: small;
+        }
+        .no-account>a{
+            text-decoration: none;
+            color: blue;
+            font-size: small;
+        }
+        .no-account>a:hover{
+            text-decoration: underline;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="manual">
+            <h2 class="blue">Sign in</h2>
+            <form action="#">
+                <input class="inp" type="email" name="" id="" placeholder="Email">
+                <input class="inp" type="password" name="" id="" placeholder="Password">
+                <div class="remember">
+                    <input type="checkbox" name="" id="">
+                    <label>Remember me</label>
+                </div>
+                <button id="signBtn" class="inp">Sign In</button>
+                <a href="#" class="forgot">Forgot Password?</a>
+            </form>
+        </div>
+        <div class="Or">
+            <div style="border-top: 1px solid grey; width: inherit;"></div>
+            <div style="margin: 0 10px; font-size: small;">OR</div>
+            <div style="border-top: 1px solid grey; width: inherit;"></div>
+        </div>
+        
+        <div class="social">
+            <div class='g-sign-in-button'>
+                <div class=content-wrapper>
+                    <div class='logo-wrapper'>
+                        <img src='https://developers.google.com/identity/images/g-logo.png'>
+                    </div>
+                    <span class='text-container'>
+                  <span>Continue With Google</span>
+                </span>
+                </div>
+            </div>
+            <div class='g-sign-in-button'>
+                <div class=content-wrapper>
+                    <div class='logo-wrapper'>
+                        <img src='facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png'>
+                    </div>
+                    <span class='text-container'>
+                  <span>Continue With Facebook</span>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="no-account">
+            <span>Don't have an account?</span>
+            <a href="#" class="sign-up">SignUp</a>
+        </div>
+    </div>
+</body>
+
+</html>
