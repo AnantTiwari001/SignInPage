@@ -117,14 +117,14 @@
     <div class="container">
         <div class="manual">
             <h2 class="blue">Sign in</h2>
-            <form action="#">
-                <input class="inp" type="email" name="" id="" placeholder="Email">
-                <input class="inp" type="password" name="" id="" placeholder="Password">
+            <form action="POST" data-netlify="true" >
+                <input class="inp" type="email" name="email" id="email" placeholder="Email">
+                <input class="inp" type="password" name="password" id="password" placeholder="Password">
                 <div class="remember">
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="remember" id="remember">
                     <label>Remember me</label>
                 </div>
-                <button id="signBtn" class="inp">Sign In</button>
+                <button type="submit" id="signBtn" class="inp">Sign In</button>
                 <a href="#" class="forgot">Forgot Password?</a>
             </form>
         </div>
