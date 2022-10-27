@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In | Anant</title>
+    <title>Sign Up | Anant</title>
     <link rel="stylesheet" href="social.css">
     <style>
         * {
@@ -53,6 +53,14 @@
         .remember>label {
             color: rgba(0, 0, 0, 0.6);
             font-size: 12px;
+        }
+        .remember>label>a{
+            text-decoration: none;
+            color: rgb(14, 185, 185);
+        }
+        .remember>label>a:hover{
+            text-decoration: underline;
+            color: blueviolet;
         }
 
         #signBtn {
@@ -116,16 +124,16 @@
 <body>
     <div class="container">
         <div class="manual">
-            <h2 class="blue">Sign in</h2>
+            <h2 class="blue">Create New Account</h2>
             <form action="POST" data-netlify="true" >
                 <input class="inp" type="email" name="email" id="email" placeholder="Email">
                 <input class="inp" type="password" name="password" id="password" placeholder="Password">
+                <input class="inp" type="password" name="Conform-password" id="password" placeholder="Confirm Password">
                 <div class="remember">
                     <input type="checkbox" name="remember" id="remember">
-                    <label>Remember me</label>
+                    <label><a href="#">I agree with Term and Conditions</a></label>
                 </div>
-                <button type="submit" id="signBtn" class="inp">Sign In</button>
-                <a href="#" class="forgot">Forgot Password?</a>
+                <button type="submit" id="signBtn" class="inp">Create Account</button>
             </form>
         </div>
         <div class="Or">
@@ -157,8 +165,8 @@
             </div>
         </div>
         <div class="no-account">
-            <span>Don't have an account?</span>
-            <a href="sign-up.html" class="sign-up">SignUp</a>
+            <span>Already have an account?</span>
+            <a href="index.html" class="sign-up">Sign In</a>
         </div>
     </div>
 </body>
