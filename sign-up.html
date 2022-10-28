@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | Anant</title>
     <link rel="stylesheet" href="social.css">
+    <script defer src="./verify.js"></script>
+    <script src="./firebase.js" type="module"></script>
     <style>
         * {
             padding: 0;
@@ -118,6 +120,10 @@
             text-decoration: underline;
             color: blueviolet;
         }
+        #emailLabel{
+            font-size: small;
+            color: red;
+        }
     </style>
 </head>
 
@@ -126,9 +132,10 @@
         <div class="manual">
             <h2 class="blue">Create New Account</h2>
             <form action="POST" data-netlify="true" >
-                <input class="inp" type="email" name="email" id="email" placeholder="Email">
+                <input class="inp" type="email" name="email" id="email" placeholder="Email" onchange="">
+                <label for="email" id="emailLabel"></label>
                 <input class="inp" type="password" name="password" id="password" placeholder="Password">
-                <input class="inp" type="password" name="Conform-password" id="password" placeholder="Confirm Password">
+                <input class="inp" type="password" name="Conform-password" id="Conpassword" placeholder="Confirm Password">
                 <div class="remember">
                     <input type="checkbox" name="remember" id="remember">
                     <label><a href="#">I agree with Term and Conditions</a></label>
